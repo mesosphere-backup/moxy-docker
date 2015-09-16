@@ -8,8 +8,12 @@
     "type": "DOCKER",
     "docker": {
       "image": "mesosphere/moxy-docker",
-      "forcePullImage": true
+      "forcePullImage": true,
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 8080, "hostPort": 8888 }
+      ]
     }
   },
-  "ports": [ 80 ]
+  "ports": [ 8888 ]
 }

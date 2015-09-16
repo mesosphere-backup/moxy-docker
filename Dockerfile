@@ -1,6 +1,6 @@
 FROM       alpine
 MAINTAINER Mesosphere <team@mesosphere.com>
-EXPOSE     80
+EXPOSE     8080
 
 RUN apk -U add openssl \
     && wget -O - https://github.com/martensson/moxy/releases/download/v0.1.1/moxy_0.1.1_linux_amd64.tar.gz \
